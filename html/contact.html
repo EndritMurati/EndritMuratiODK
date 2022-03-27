@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="../css/contact.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="back" onclick="">
+      <a href="../index.html">Back</a>
+    </div>
+    <div class="container"> 
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Purchase</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At deserunt praesentium saepe ab culpa qui, rerum dicta autem excepturi, alias illo debitis distinctio eveniet recusandae numquam necessitatibus pariatur sapiente vero nihil deleniti, dolorem voluptatem ex provident? Amet, delectus voluptate quasi quis perferendis ipsum quod rerum iure</p>
+          <div class="social-media">
+            <p>Contact us : </p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=100009036787012">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.twitter.com">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/endritmurati_/">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form  autocomplete="off" onsubmit="sendEmail(); reset(); ">
+            <h3 class="title">Write your data:</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="">Username</label>
+              <span>Username</span>
+            </div>
+            <div class="input-container">
+              <input type="email" id="email" name="email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container">    
+             <select name="order" class="input">
+                <option value="start">Choose your order!</option>
+                <option value="ip13mini">Iphone 13 mini</option>
+                <option value="ip12">Iphone 12 Pro Max</option>
+                <option value="ip13">Iphone 13 Pro Max</option>
+                <option value="ipx">Iphone X</option>
+                <option value="ip6">Iphone 6s</option>
+                <option value="ip11">Iphone 11</option>
+                <option value="ip8">Iphone 8plus</option>
+                <option value="samsung10">Samsung Galaxy 10s</option>
+                <option value="samsung21">Samsung Galaxy 21s Ultra</option>
+              </select>
+              <label for="">Order</label>
+              <span>Order</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="location" class="input" required></textarea>
+              <label for="">Location</label>
+              <span>Location</span>
+            </div>
+            <input onclick="onclickbtr()" type="submit" value="Submit" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script></script>
+    <script src="../js/contact.js"></script>
+  </body>
+</html>
